@@ -197,6 +197,38 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0.3, 0.3)
 }
 
+#myTopnav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.content_div {
+   margin-top: 64px;
+   margin-bottom: 100px;
+}
+
+#bs {
+    width: 100px;
+    height: 100px;
+}
+
+#ms1 {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#ms2 {
+    width: 100px;
+    height: 100px;
+}
+
+#phd {
+    width: 100px;
+    height: 100px;
+}
+
 #nameContainer {
     width: 100%;
     margin-top: 6px;
