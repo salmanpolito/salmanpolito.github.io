@@ -83,7 +83,27 @@
         }
 }
 
+#welcome_text {
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin-block-start: 0;
+}
 
+div.education {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.education_title {
+    display: block;
+}
+
+.education_achievements_ul {
+    text-align: start;
+}
 
 /* Footer style */
 footer a {
@@ -163,7 +183,7 @@ footer {
 /* Other generic element styles */
 
 body {
-    background-color: #FFF8DC;
+    background-color: #F5F5F5;
     color: black;
 }
 
@@ -174,7 +194,7 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
+    box-shadow: 5px 5px 5px rgba(0, 0, 0.3, 0.3)
 }
 
 #nameContainer {
@@ -187,3 +207,5 @@ body {
         font-size: 24px;
         /* line-height: 48px; */
     }
+
+
