@@ -8,9 +8,9 @@
     --text-color-light: white;
     --text-color-dark: black;
     --text-color-url: grey;
-    --div-bg-color-light: #f4ecf7;
-    --div-bg-color-dark: #8e44ad;
-    --skill-title-color: #53777A;
+    --div-bg-color-light: #FFEFD5;
+    --div-bg-color-dark: #F5F5F5;
+    --skill-title-color: #8FBC8F;
 }
 
 
@@ -194,8 +194,16 @@ body {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 55px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0.3, 0.3)
+}
+
+
+.content_div {
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, var(--div-bg-color-dark), var(--div-bg-color-dark) 96%, var(--div-bg-color-light) 100%);
+    background: linear-gradient(to top, var(--div-bg-color-dark), var(--div-bg-color-light) 96%, var(--div-bg-color-light) 100%);
 }
 
 #myTopnav {
@@ -205,29 +213,33 @@ body {
 }
 
 .content_div {
-   margin-top: 110px;
-   margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #bs {
     width: 100px;
-    height: 100px;
+    height: 135px;
+    padding-bottom: 40px;
 }
 
 #ms1 {
     width: 100px;
-    height: 100px;
+    height: 135px;
     margin-right: 20px;
+    padding-bottom: 40px;
 }
 
 #ms2 {
     width: 100px;
-    height: 100px;
+    height: 135px;
+    padding-bottom: 40px;
 }
 
 #phd {
     width: 100px;
-    height: 100px;
+    height: 135px;
+    padding-bottom: 40px;
 }
 
 #nameContainer {
