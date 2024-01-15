@@ -1,10 +1,27 @@
-let modal, modalImg, captionText;
-
-document.addEventListener("DOMContentLoaded", () => {
-    modal = document.getElementById("imageViewerModalDiv");
-    modalImg = document.getElementById("imageViewerModalImageView");
-    captionText = document.getElementById("modalViewCaption");
+$(document).ready(function () {
+    // Set up Google Analytics
+    setUpGA4();
 });
+
+function setUpGA4() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-159388383-1');
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(101239814);
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 
 function copyEmailToClipboard() {
     navigator.clipboard.writeText("kobiljon@nsl.inha.ac.kr").then(function () {
@@ -29,14 +46,4 @@ function showToast(message) {
     setTimeout(function () {
         toast.className = toast.className.replace("show", "");
     }, 3000);
-}
-
-function openImageModalView(element) {
-    modal.style.display = "block";
-    modalImg.src = element.src;
-    captionText.innerHTML = element.alt;
-}
-
-function closeImageModalView() {
-    modal.style.display = "none";
 }
