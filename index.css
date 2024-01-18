@@ -215,7 +215,7 @@ body {
 
 .content_div {
     padding-top: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 4px;
 }
 
 #bs {
@@ -308,16 +308,7 @@ body {
         background-color: rgba(0,0,0,0.8);
     }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
+
 
 /* Number text (1/3 etc) */
 .numbertext {
