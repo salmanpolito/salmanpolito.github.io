@@ -362,8 +362,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .rnc-item {
-        width: 30% !important;
+    .rnc-item1 {
+        width: 80% !important;
+    }
+
+    .rnc-item2 {
+        width: 36% !important;
     }
 }
 
@@ -374,5 +378,5 @@ body {
     padding: 0.2rem 0.8rem;
     color: #fff;
     font-weight: 800;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
 }
