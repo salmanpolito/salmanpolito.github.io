@@ -362,6 +362,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .rnc-item {
+        width: 30% !important;
+    }
+    
     .rnc-item1 {
         width: 80% !important;
     }
@@ -386,5 +390,15 @@ body {
     padding: 0.2rem 0.8rem;
     color: #fff;
     font-weight: 800;
+    font-size: 2.0rem;
+}
+
+.ExpCategory {
+    display: inline-block;
+    background-color: #57aaee;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.8rem;
+    color: #fff;
+    font-weight: 500;
     font-size: 2.0rem;
 }
