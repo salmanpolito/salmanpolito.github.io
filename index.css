@@ -369,6 +369,14 @@ body {
     .rnc-item2 {
         width: 36% !important;
     }
+
+    .rnc-item3 {
+        width: 57% !important;
+    }
+
+    .rnc-item4 {
+        width: 45% !important;
+    }
 }
 
 .titleCategory {
