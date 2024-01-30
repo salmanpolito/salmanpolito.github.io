@@ -363,7 +363,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .rnc-item {
-        width: 30% !important;
+        width: 10% !important;
     }
     
     .rnc-item1 {
@@ -385,11 +385,11 @@ body {
 
 .titleCategory {
     display: inline-block;
-    background-color: #000;
+    background-color: #717171;
     border-radius: 0.3rem;
-    padding: 0.2rem 0.8rem;
+    padding: 0.4rem 0.9rem;
     color: #fff;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 2.0rem;
 }
 
@@ -402,3 +402,60 @@ body {
     font-weight: 500;
     font-size: 2.0rem;
 }
+
+section {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 140px;
+    bottom: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+    section.section-show {
+        top: 50px;
+        bottom: auto;
+        opacity: 1;
+        padding-bottom: 0px;
+    }
+
+    section .container {
+        background: rgba(0, 0, 0, 0);
+        padding: 30px;
+    }
+
+@media (max-width: 768px) {
+    section {
+        top: 120px;
+    }
+
+        section.section-show {
+            top: 80px;
+        }
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height: 1px;
+    margin: 0 0 20px 0px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+    .section-title h2::after {
+        content: "";
+        width: 140px;
+        height: 3px;
+        display: inline-block;
+        background: #000;
+        margin: 4px 10px;
+    }
+
+
+
+
