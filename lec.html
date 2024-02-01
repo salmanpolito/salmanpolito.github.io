@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website of Dr. Muhammad Salman</title>
+    <title>Dr. Salman|Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,28 +24,82 @@
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <!-- Tailwind CDN (development only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Local js scripts and css styles -->
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans pb-32">
 
-    <!-- Responsive navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="topnav" id="myTopnav">
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <!-- Navbar items for desktop browser (large landscape screen)  -->
+        <div class="topnav" id="myTopnav">
 
-        <!-- Navbar -->
+            <!-- Navbar -->
+            <a class="active" href="index.html">Home</a>
+            <a href="RnC.html">Research & Collaboration</a>
+            <a href="exp.html">Experience</a>
+            <a href="lec.html">Lectures</a>
+            <a href="awards.html">Awards</a>
+            <a href="positions.html">Positions Opening</a>
+            <a href="contact.html">Contact</a>
 
-        <a class="active" href="https://salmanpolito.github.io">Home</a>
-        <a href="RnC.html">Research & Collaboration</a>
-        <a href="exp.html">Experience</a>
-        <a href="lec.html">Lectures</a>
-        <a href="awards.html">Awards</a>
-        <a href="positions.html">Opening Positions</a>
-        <a href="contact.html">Contact</a>
-
-        <!-- Menu button that collapses the navbar -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+            <!-- Menu button that collapses the navbar -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="content_div mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="container content-main">
+        <br>
+        <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                </div>
+                <div class="col-sm-3 ">
+                    <div class="card">
+                        <a class="card" href="/category/creativity">
+                            <div class="text-center">
+                                <img src="assets/socket.png" alt="creativity" class="img-thumbnail img-fluid rounded-circle thumbnail">
+                            </div>
+                            <div class="content-card text-3xl">
+                                <h3>
+                                    <strong>Socket Programming in C</strong>
+                                </h3>
+                                <p>
+                                    Playlist of 12 Lectures
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 ">
+                    <div class="card">
+                        <a class="card" href="/category/all-profile">
+                            <div class="text-center">
+                                <img src="/static/all-profile-8f60fb3014d72fdbeadcb7bb0acf492c.png" alt="all-profile" class="img-thumbnail img-fluid rounded-circle thumbnail">
+                            </div>
+                            <div class="content-card">
+                                <h3>
+                                    Wireless Digital Communication
+                                </h3>
+                                <p>
+                                    Playlist of 13 Lectures
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
     </div>
+
     <footer>
         <ul>
             <li>
