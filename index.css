@@ -456,35 +456,6 @@ section {
         margin: 4px 10px;
     }
 
-.card {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-    background: #04AA6D;
-    color: #758f9b;
-    border-radius: 5px;
-    box-shadow: 0 15px 40px #717171;
-    border: #333;
-    margin-bottom: 10px;
-    text-align: left;
-    transition: all .25s ease-in-out;
-    min-height: 250px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #FFEFD5;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.3rem;
-}
-
-
-
 
 
 
