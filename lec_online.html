@@ -25,6 +25,7 @@
 
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="lec_online.js"></script>
 </head>
 
 <body class="bg-gray-100 font-sans pb-32">
@@ -50,28 +51,25 @@
         </div>
     </nav>
 
-    <div class="pt-36 w-full flex justify-center space-x-6">
+    <div class="pt-36 container mx-auto justify-center space-x-6">
 
-        <!-- Online -->
-        <a href="lec_online.html"
-           class="max-w-sm rounded overflow-hidden shadow-lg hover:drop-shadow-2xl cursor-pointer w-80">
-            <div class="w-80 flex justify-center">
-                <img class="w-72" src="assets/lectures/youtube.png" alt="Youtube">
-            </div>
-            <div class="px-6 py-4 flex justify-center">
-                <div class="font-bold text-4xl mb-2">Online</div>
-            </div>
-        </a>
+        <!-- Computer Networks -->
+        <div class="w-full flex justify-evenly space-x-2 ml-12 mr-12">
+            <span class="flex-grow">
+                Socket Programming in C
+            </span>
 
-        <!-- Offline -->
-        <a href="lec_offline.html"
-           class="ms-3 rounded overflow-hidden shadow-lg hover:drop-shadow-2xl cursor-pointer w-80">
-            <div class="w-80 flex justify-center">
-                <img class="w-72" src="assets/lectures/school.png" alt="School">
-            </div>
-            <div class="px-6 py-4 flex justify-center">
-                <div class="font-bold text-4xl mb-2">Offline</div>
-            </div>
+            <button id="btn_expand_compnetw" type="button" class="flex-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                VIEW COURSE
+            </button>
+        </div>
+        <a href="https://youtu.be/6N_xmkGVXrs?si=oXueuNmuoTRiT0-9"
+           class="hidden flex h-32 p-2 bg-gray-400 align-middle" id="compnetw_div">
+            
+            <img class="inline-block w-32 h-28" src="assets/lectures/compnetw/compnetw-1.png" alt="Lec1" />
+
+            <span class="flex-grow ps-24">Lecture 01: Socket Programming in C</span>
+
         </a>
 
     </div>
@@ -99,5 +97,7 @@
             </li>
         </ul>
     </footer>
+
 </body>
+
 </html>
