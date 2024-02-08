@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
-    <script defer src="./static/js/account_dropdown.js"></script>
-    <script defer src="./static/js/burger_menu_dropdown.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact Us - Responsive Page Design</title>
@@ -28,7 +26,6 @@
 <body>
     <section>
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="contactInfo">
                     <div>
                         <h2>Contact Info</h2>
@@ -64,6 +61,7 @@
                     </ul>
                 </div>
                 <div class="contactForm">
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <h2>Send a Message</h2>
                     <div class="formBox">
                         <div class="inputBox w50">
@@ -90,8 +88,8 @@
                             <input type="submit" value="Send">
                         </div>
                     </div>
-                </div>
-            </form>
+                 </form>
+             </div>
         </div>
     </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
