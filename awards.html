@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website of Dr. Muhammad Salman</title>
+    <title>Dr. Salman|Regular Lectures </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -15,32 +17,258 @@
     <!-- Icon library e.g., hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <!-- Tailwind CDN (development only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <noscript data-n-css=""></noscript>
+    <style data-n-href="/_next/static/css/b0d1f53312fd74e8.css">
+        .Supplement_supplements__ZmaEd {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 3px 5px;
+            grid-gap: 2px;
+            gap: 2px
+        }
+
+        .Supplement_desc___XXiP {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #fff
+        }
+
+        .Course_course__OszLq {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            grid-gap: 12px;
+            gap: 12px
+        }
+
+        .Course_code__IsA_t {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 21px;
+            color: #000
+        }
+
+        .Course_code__IsA_t, .Course_title__k07Nt {
+            font-style: normal;
+            display: flex;
+            align-items: center
+        }
+
+        .Course_title__k07Nt {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333
+        }
+
+        .courses_container__ONWcW {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            grid-gap: 20px;
+            gap: 20px;
+            padding-top: 20px;
+            width: calc(100% - 30px);
+            margin: auto
+        }
+
+        @media only screen and (min-width:1200px) {
+            .courses_container__ONWcW {
+                width: 1170px
+            }
+        }
+
+        .courses_years__w_hjS {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            grid-gap: 10px;
+            gap: 10px;
+            margin-bottom: 20px
+        }
+    </style>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+    <script src="/_next/static/chunks/webpack-991298bdc3f3ce1b.js" defer=""></script>
+    <script src="/_next/static/chunks/main-153cd84e3553ca39.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-faf6c1c0c85d6f8a.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-dd0b5e52ed1817a8.js" defer=""></script>
+    <script src="/_next/static/4FSkXc7SKFwT4rvkh8HhA/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/4FSkXc7SKFwT4rvkh8HhA/_ssgManifest.js" defer=""></script>
+    <script src="/_next/static/4FSkXc7SKFwT4rvkh8HhA/_middlewareManifest.js" defer=""></script>
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/projects-4ace7e73ba154886.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/305-579f5fab74764665.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/publications-ff550b9cdf4b1528.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/919-a7a5a9d537e3dfc2.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/members-39dcb7cab0d3d73b.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/courses-0428134199e08721.js">
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans pb-32">
 
-    <!-- Responsive navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="topnav" id="myTopnav">
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <!-- Navbar items for desktop browser (large landscape screen)  -->
+        <div class="topnav" id="myTopnav">
 
-        <!-- Navbar -->
+            <!-- Navbar -->
+            <a class="active" href="index.html">Home</a>
+            <a href="RnC.html">Research & Collaboration</a>
+            <a href="exp.html">Experience</a>
+            <a href="lec.html">Lectures</a>
+            <a href="awards.html">Awards</a>
+            <a href="positions.html">Positions Opening</a>
+            <a href="contact.html">Contact</a>
 
-        <a class="active" href="https://salmanpolito.github.io">Home</a>
-        <a href="RnC.html">Research & Collaboration</a>
-        <a href="exp.html">Experience</a>
-        <a href="lec.html">Lectures</a>
-        <a href="awards.html">Awards</a>
-        <a href="positions.html">Opening Positions</a>
-        <a href="contact.html">Contact</a>
+            <!-- Menu button that collapses the navbar -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="courses_container__ONWcW py-32">
+        <div>
+            <h2 class="MDXComponents_h2__QDzCj">Awards</h2>
+        </div>
+        <!-- 2024 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2024</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">KENTECH, South Korea</em>
 
-        <!-- Menu button that collapses the navbar -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Best Poster Award (Research Fair in KENTECH)</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2024 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2022</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">KENTECH, South Korea</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Best Poster Award (Research Fair in KENTECH)</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2024 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2020</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">Inha University, South Korea</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Global Vision Scholarship Award</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Research Assistantship</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2022</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">Effat University, South Korea</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Best Teaching Award</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2013~2014</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">ERASMUS\LLP</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Exchange Student Scholarship Award</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2012~2013</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">Politecnico di Torino, Italy</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">EDISU Merit Scholarship Award</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 Courses  -->
+        <div class="courses_years__w_hjS">
+            <div>
+                <h3 class="MDXComponents_h3__IT_6A">2010</h3>
+            </div>
+            <div>
+                <!-- Fall/Spring  -->
+                <em class="publicationsCategory">BUITEMS, Pakistan</em>
+
+                <!-- Course Details (01) -->
+                <div class="Course_course__OszLq">
+                    <div class="Course_code__IsA_t"></div><div class="Course_title__k07Nt">Gold Medal Award (First Position in EE Department)</div>
+                    <!-- Provide sallybus link in Google  -->
+                </div>
+            </div>
+        </div>
+
     </div>
+
     <footer>
         <ul>
             <li>
