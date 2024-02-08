@@ -3,85 +3,93 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dr. Salman|Research and Collaboration</title>
+    <title>Dr. Salman|Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Icon library e.g., hamburger menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <!-- Tailwind CDN (development only) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Local js scripts and css styles -->
-    <script type="text/javascript" src="index.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us - Responsive Page Design</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/images/news2.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <section>
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="/assets/images/location.png"></span>
+                            <span>
+                                184 Ippokratous Street<br>
+                                Athens, Gr<br>
+                                11472
+                            </span>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="/assets/images/mail.png"></span>
+                            <!-- <span>nassosanagn@gmail.com</span> -->
+                            <span><a href="mailto: nassosanagn@gmail.com">nassosanagn@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <span><img src="/assets/images/call.png"></span>
+                            <span>702-279-3488</span>
+                        </li>
 
-<body class="bg-gray-100 font-sans pb-32">
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/nassosanagn/"><img src="/assets/images/1.png"></a></li>
+                    <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="/assets/images/3.png"></a></li>
+                    <li><a href="https://twitter.com/nassosanagn"><img src="/assets/images/2.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="/assets/images/5.png"></a></li>
 
-    <!-- Navbar -->
-    <nav class="bg-gray-800">
-        <!-- Navbar items for desktop browser (large landscape screen)  -->
-        <div class="topnav" id="myTopnav">
-
-            <!-- Navbar -->
-            <a class="active" href="index.html">Home</a>
-            <a href="RnC.html">Research & Collaboration</a>
-            <a href="exp.html">Experience</a>
-            <a href="lec.html">Lectures</a>
-            <a href="awards.html">Awards</a>
-            <a href="positions.html">Opening Positions</a>
-            <a href="contact.html">Contact</a>
-
-            <!-- Menu button that collapses the navbar -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </nav>
-    <div class="flex flex-col w-full items-center border border-gray-300 rounded-lg shadow md:flex-row">
-        <div class="content_div pt-32 px-4 leading-normal">
-            <!-- Contact Contents here -->
-
-
-
-        </div>
-    </div>
-
-    <!-- Bottom bar -->
-    <footer>
-        <ul>
-            <li>
-                <a href="https://scholar.google.com/citations?user=Xx59q8oAAAAJ&hl=en">
-                    <img src="assets/scholar64.png" alt="Google Scholar">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/salmanpolito"><img src="assets/github64.png" alt="Github"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/salman-polito/"><img src="assets/linkedin64.ico" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a onclick="copySkypeIdToClipboard()" title="live:engr.salman_khan">
-                    <img src="assets/skype64.ico" alt="Skype">
-                </a>
-            </li>
-            <li>
-                <a href="mailto:salman@nsl.inha.ac.kr"><img src="assets/email64.ico" alt="Email"></a>
-            </li>
-        </ul>
-    </footer>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+    </section>
 </body>
-
 </html>
