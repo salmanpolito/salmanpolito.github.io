@@ -393,6 +393,16 @@ body {
     font-size: 2.0rem;
 }
 
+.courseCategory {
+    display: inline-block;
+    background-color: #717171;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.9rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
 .ExpCategory {
     display: inline-block;
     background-color: #57aaee;

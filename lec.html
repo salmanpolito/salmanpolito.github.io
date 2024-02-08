@@ -49,55 +49,114 @@
             </a>
         </div>
     </nav>
+    <div class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row">
+        <div class="content_div  pt-32 flex flex-col p-4 leading-normal">
 
+            <!-- Title -->
+            <h5 style="font-family: Optima"
+                class="text-5xl tracking-tight text-gray-900">
+                <strong>Lectures taught (Online and Offline)</strong>
+            </h5>
+            <hr class="h-px my-2 bg-gray-300 border-0">
+            <!-- Description -->
+            <p style="font-family: Optima"
+               class="text-4xl mb-3 font-style: italic text-gray-700 text-justify">
+                Welcome to my teaching platform! With over a decade of experience in academia, I've had the privilege of instructing diverse courses both online and offline.
+                For those eager to delve into the realm of digital learning, I offer a range of online courses covering subjects such as socket programming in C, Wireless digital communication, and Special topics on cloud computing. To explore these online offerings, simply click on the "Online Courses" button.
+                <br>
+                Additionally, I also conduct enriching offline lectures, providing a dynamic learning experience in person. If you're interested in discovering more about my offline courses, please navigate to the "Offline Courses" button for detailed information.
+                Whether you prefer the convenience of online learning or the engagement of face-to-face instruction, I'm here to guide you on your educational journey. Explore the possibilities and embark on a path of knowledge with me!
+            </p>
+
+        </div>
+    </div>
     <div class="pt-36 w-full flex justify-center space-x-6">
 
+        <style>
+            .btn {
+                justify-content: center;
+                align-items: center;
+                height: fit-content;
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: black;
+                font-size: 25px;
+            }
+
+                .btn:hover {
+                    animation: shaking 0.4s infinite;
+                }
+
+            @keyframes shaking {
+                0% {
+                    transform: translateX(0) rotate(0deg);
+                }
+
+                25% {
+                    transform: translateX(15px) rotate(5deg);
+                }
+
+                50% {
+                    transform: translateX(0px) rotate(0deg);
+                }
+
+                75% {
+                    transform: translateX(-15px) rotate(-5deg);
+                }
+
+                100% {
+                    transform: translateX(0px) rotate(0deg);
+                }
+            }
+        </style>
+
         <!-- Online -->
+
         <a href="lec_online.html"
-           class="max-w-sm rounded overflow-hidden shadow-lg hover:drop-shadow-2xl cursor-pointer w-80">
+           class="btn">
             <div class="w-80 flex justify-center">
                 <img class="w-72" src="assets/lectures/youtube.png" alt="Youtube">
             </div>
             <div class="px-6 py-4 flex justify-center">
-                <div class="font-bold text-4xl mb-2">Online</div>
+                <div class="font-bold text-4xl mb-2">Online Lectures</div>
             </div>
         </a>
 
         <!-- Offline -->
         <a href="lec_offline.html"
-           class="ms-3 rounded overflow-hidden shadow-lg hover:drop-shadow-2xl cursor-pointer w-80">
+           class="btn">
             <div class="w-80 flex justify-center">
                 <img class="w-72" src="assets/lectures/school.png" alt="School">
             </div>
             <div class="px-6 py-4 flex justify-center">
-                <div class="font-bold text-4xl mb-2">Offline</div>
+                <div class="font-bold text-4xl mb-2">Regular Lectures</div>
             </div>
         </a>
 
     </div>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="https://scholar.google.com/citations?user=Xx59q8oAAAAJ&hl=en">
-                    <img src="assets/scholar64.png" alt="Google Scholar">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/salmanpolito"><img src="assets/github64.png" alt="Github"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/salman-polito/"><img src="assets/linkedin64.ico" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a onclick="copySkypeIdToClipboard()" title="live:engr.salman_khan">
-                    <img src="assets/skype64.ico" alt="Skype">
-                </a>
-            </li>
-            <li>
-                <a href="mailto:salman@nsl.inha.ac.kr"><img src="assets/email64.ico" alt="Email"></a>
-            </li>
-        </ul>
-    </footer>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://scholar.google.com/citations?user=Xx59q8oAAAAJ&hl=en">
+                        <img src="assets/scholar64.png" alt="Google Scholar">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/salmanpolito"><img src="assets/github64.png" alt="Github"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/salman-polito/"><img src="assets/linkedin64.ico" alt="Linkedin"></a>
+                </li>
+                <li>
+                    <a onclick="copySkypeIdToClipboard()" title="live:engr.salman_khan">
+                        <img src="assets/skype64.ico" alt="Skype">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:salman@nsl.inha.ac.kr"><img src="assets/email64.ico" alt="Email"></a>
+                </li>
+            </ul>
+        </footer>
 </body>
 </html>
