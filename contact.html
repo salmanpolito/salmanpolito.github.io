@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
+    <script defer src="./static/js/account_dropdown.js"></script>
+    <script defer src="./static/js/burger_menu_dropdown.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact Us - Responsive Page Design</title>
@@ -26,68 +28,90 @@
 <body>
     <section>
         <div class="container">
-            <div class="contactInfo">
-                <div>
-                    <h2>Contact Info</h2>
-                    <ul class="info">
-                        <li>
-                            <span><img src="./assets/images/location.png"></span>
-                            <span>
-                                Department of CSE<br>
-                                College of EME<br>
-                                NUST, Islamabad<br>
-                                Pakistan.
-                            </span>
-                            </span>
-                        </li>
-                        <li>
-                            <span><img src="./assets/images/mail.png"></span>
-                            <!-- <span>nassosanagn@gmail.com</span> -->
-                            <span><a href="mailto: melleniumster@gmail.com">salman@nsl.inha.ac.kr</a></span>
-                        </li>
-                        <li>
-                            <span><img src="./assets/images/call.png"></span>
-                            <span>010-2134-4007</span>
-                        </li>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="contactInfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="./assets/images/location.png"></span>
+                                <span>
+                                    Department of CSE<br>
+                                    College of EME<br>
+                                    NUST, Islamabad<br>
+                                    Pakistan.
+                                </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="./assets/images/mail.png"></span>
+                                <!-- <span>nassosanagn@gmail.com</span> -->
+                                <span><a href="mailto: melleniumster@gmail.com">salman@nsl.inha.ac.kr</a></span>
+                            </li>
+                            <li>
+                                <span><img src="./assets/images/call.png"></span>
+                                <span>010-2134-4007</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/salman.polito"><img src="./assets/images/1.png"></a></li>
+                        <li><a href="https://www.instagram.com/salman.polito/"><img src="./assets/images/3.png"></a></li>
+                        <li><a href="https://twitter.com/salmanpolito"><img src="./assets/images/2.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/salman-polito/"><img src="./assets/images/5.png"></a></li>
 
                     </ul>
                 </div>
-                <ul class="sci">
-                    <li><a href="https://www.facebook.com/salman.polito"><img src="./assets/images/1.png"></a></li>
-                    <li><a href="https://www.instagram.com/salman.polito/"><img src="./assets/images/3.png"></a></li>
-                    <li><a href="https://twitter.com/salmanpolito"><img src="./assets/images/2.png"></a></li>
-                    <li><a href="https://www.linkedin.com/in/salman-polito/"><img src="./assets/images/5.png"></a></li>
-
-                </ul>
-            </div>
-            <div class="contactForm">
-                <h2>Send a Message</h2>
-                <div class="formBox">
-                    <div class="inputBox w50">
-                        <input type="text" name="" required>
-                        <span>First Name</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Last Name</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="email" required>
-                        <span>Email Address</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Mobile Number</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <textarea required></textarea>
-                        <span>Write your message here...</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <input type="submit" value="Send">
+                <div class="contactForm">
+                    <h2>Send a Message</h2>
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
+        </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "melleniumster@gmail.com",
+                    Password: "(mbPahw9",
+                To: 'melleniumster@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone No: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                    message => alert("Message Sent Successfully. Thanks for Contacting")
+                );
+        }
+    </script>
 </body>
 </html>
