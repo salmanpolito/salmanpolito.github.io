@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website of Dr. Muhammad Salman</title>
+    <title>Dr. Salman|Research and Collaboration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -15,35 +17,48 @@
     <!-- Icon library e.g., hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Google Analytics -- Global site tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159388383-1"></script>
-    <script async src="https://static.getclicky.com/js"></script>
-
     <!-- Local js scripts and css styles -->
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <!-- Tailwind CDN (development only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Local js scripts and css styles -->
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans pb-32">
 
-    <!-- Responsive navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="topnav" id="myTopnav">
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <!-- Navbar items for desktop browser (large landscape screen)  -->
+        <div class="topnav" id="myTopnav">
 
-        <!-- Navbar -->
+            <!-- Navbar -->
+            <a class="active" href="index.html">Home</a>
+            <a href="RnC.html">Research & Collaboration</a>
+            <a href="exp.html">Experience</a>
+            <a href="lec.html">Lectures</a>
+            <a href="awards.html">Awards</a>
+            <a href="positions.html">Opening Positions</a>
+            <a href="contact.html">Contact</a>
 
-        <a class="active" href="https://salmanpolito.github.io">Home</a>
-        <a href="RnC.html">Research & Collaboration</a>
-        <a href="exp.html">Experience</a>
-        <a href="lec.html">Lectures</a>
-        <a href="awards.html">Awards</a>
-        <a href="positions.html">Opening Positions</a>
-        <a href="contact.html">Contact</a>
+            <!-- Menu button that collapses the navbar -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="flex flex-col w-full items-center border border-gray-300 rounded-lg shadow md:flex-row">
+        <div class="content_div pt-32 px-4 leading-normal">
+            <!-- Contact Contents here -->
 
-        <!-- Menu button that collapses the navbar -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+
+
+        </div>
     </div>
+
+    <!-- Bottom bar -->
     <footer>
         <ul>
             <li>
@@ -68,4 +83,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
