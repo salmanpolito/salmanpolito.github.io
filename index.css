@@ -394,11 +394,11 @@ body {
 }
 
 .courseCategory {
-    width: 400px;
+    width: 400;
     display: inline-block;
     background-color: #286090;
     border-radius: 1.3rem;
-    padding: 0.4rem 1.5rem;
+    padding: 0.4rem 1.6rem;
     color: #fff;
     font-weight: 500;
     font-size: 1.5rem;
