@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact Us - Responsive Page Design</title>
     <link rel="shortcut icon" type="image/jpg" href="/assets/images/news2.png" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -96,23 +97,23 @@
                     <h2>Send a Message</h2>
                     <div class="formBox">
                         <div class="inputBox w50">
-                            <input type="text" name="" required>
+                            <input id="inpFirstName" type="text" name="" required>
                             <span>First Name</span>
                         </div>
                         <div class="inputBox w50">
-                            <input type="text" required>
+                            <input id="inpLastName" type="text" required>
                             <span>Last Name</span>
                         </div>
                         <div class="inputBox w50">
-                            <input type="email" required>
+                            <input id="inpEmail" type="email" required>
                             <span>Email Address</span>
                         </div>
                         <div class="inputBox w50">
-                            <input type="text" required>
+                            <input id="inpPhoneNum" type="text" required>
                             <span>Mobile Number</span>
                         </div>
                         <div class="inputBox w100">
-                            <textarea required></textarea>
+                            <textarea id="inpMessage" required></textarea>
                             <span>Write your message here...</span>
                         </div>
                         <div class="inputBox w100">
@@ -123,22 +124,31 @@
             </div>
         </div>
     </section>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail() {
+
+            // Get input fields
+            var firstName = document.getElementById("inpFirstName").value;
+            var lastName = document.getElementById("inpLastName").value;
+            var fullName = firstName + " " + lastName;
+            var email = document.getElementById("inpEmail").value;
+            var phone = document.getElementById("inpPhoneNum").value;
+            var message = document.getElementById("inpMessage").value;
+
+            // Send email
             Email.send({
                 Host: "smtp.gmail.com",
                 Username: "salmankentech@gmail.com",
                 Password: "(mbPahw9",
+                From: 'salmankentech@gmail.com',
                 To: 'melleniumster@gmail.com',
-                From: document.getElementById("email").value,
                 Subject: "New Contact Form Enquiry",
-                Body: "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Phone No: " + document.getElementById("phone").value
-                    + "<br> Message: " + document.getElementById("message").value
+                Body: "Name: " + fullName + 
+                    "<br> Email: " + email +
+                    "<br> Phone No: " + phone +
+                    "<br> Message: " + message
             }).then(
-                message => alert("Message Sent Successfully. Thanks for Contacting")
+                message => alert("Message Sent Successfully. Thanks for Contacting"),
             );
         }
     </script>
