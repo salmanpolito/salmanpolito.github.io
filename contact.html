@@ -2,156 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Dr. Salman|Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Local js scripts and css styles -->
-    <script type="text/javascript" src="index.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact Us - Responsive Page Design</title>
-    <link rel="shortcut icon" type="image/jpg" href="/assets/images/news2.png" />
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <title>Dr. Salman | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Icon library e.g., hamburger menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Responsive navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="topnav" id="myTopnav">
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="RnC.html">Research & Collaboration</a>
+    <a href="exp.html">Experience</a>
+    <a href="lec.html">Lectures</a>
+    <a href="awards.html">Awards</a>
+    <a href="positions.html">Opening Positions</a>
+    <a class="active" href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-        <!-- Navbar -->
-        <a href="index.html">Home</a>
-        <a href="RnC.html">Research & Collaboration</a>
-        <a href="exp.html">Experience</a>
-        <a href="lec.html">Lectures</a>
-        <a href="awards.html">Awards</a>
-        <a href="positions.html">Opening Positions</a>
-        <a class="active" href="contact.html">Contact</a>
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <!-- Hidden Access Key -->
+        <input type="hidden" name="access_key" value="35ade46c-b56c-4a01-96ec-c3570e36b8ac">
 
-        <!-- Menu button that collapses the navbar -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-    <section>
-        <div class="container">
-                <form onsubmit="sendEmail(); reset(); return false;">
-            <div class="contactInfo">
-                <div>
-                    <h2>Contact Info</h2>
-                    <ul class="info">
-                        <li>
-                            <span><img src="./assets/images/location.png"></span>
-                            <span>
-                                Department of CSE,<br>
-                                College of EME,<br>
-                                NUST, Islamabad,<br>
-                                Pakistan.
-                            </span>
-                            </span>
-                        </li>
-                        <li>
-                            <span><img src="./assets/images/mail.png"></span>
-                            <!-- <span>nassosanagn@gmail.com</span> -->
-                            <span><a href="mailto: melleniumster@gmail.com">msalman@ceme.nust.edu.pk</a></span>
-                        </li>
-                        <li>
-                            <span><img src="./assets/images/call.png"></span>
-                            <span>+92-(0)51-54444116</span>
-                        </li>
-
-                    </ul>
-                </div>
-                <ul class="sci">
-                    <li><a href="https://www.facebook.com/salman.polito"><img src="./assets/images/1.png"></a></li>
-                    <li><a href="https://www.instagram.com/salman.polito/"><img src="./assets/images/3.png"></a></li>
-                    <li><a href="https://twitter.com/salmanpolito"><img src="./assets/images/2.png"></a></li>
-                    <li><a href="https://www.linkedin.com/in/salman-polito/"><img src="./assets/images/5.png"></a></li>
-
-                </ul>
-            </div>
-            <div class="contactForm">
-                    <h2>Send a Message</h2>
-                    <div class="formBox">
-                        <div class="inputBox w50">
-                            <input id="inpFirstName" type="text" name="" required>
-                            <span>First Name</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input id="inpLastName" type="text" required>
-                            <span>Last Name</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input id="inpEmail" type="email" required>
-                            <span>Email Address</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input id="inpPhoneNum" type="text" required>
-                            <span>Mobile Number</span>
-                        </div>
-                        <div class="inputBox w100">
-                            <textarea id="inpMessage" required></textarea>
-                            <span>Write your message here...</span>
-                        </div>
-                        <div class="inputBox w100">
-                            <input type="submit" value="Send">
-                        </div>
-                    </div>
-            </div>
-                </form>
+        <div class="contactInfo">
+          <div>
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><img src="./assets/images/location.png"></span>
+                <span>
+                  Department of CSE,<br>
+                  College of EME,<br>
+                  NUST, Islamabad,<br>
+                  Pakistan.
+                </span>
+              </li>
+              <li>
+                <span><img src="./assets/images/mail.png"></span>
+                <span><a href="mailto:melleniumster@gmail.com">melleniumster@gmail.com</a></span>
+              </li>
+              <li>
+                <span><img src="./assets/images/call.png"></span>
+                <span>+92-(0)51-54444116</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/salman.polito"><img src="./assets/images/1.png"></a></li>
+            <li><a href="https://www.instagram.com/salman.polito/"><img src="./assets/images/3.png"></a></li>
+            <li><a href="https://twitter.com/salmanpolito"><img src="./assets/images/2.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/salman-polito/"><img src="./assets/images/5.png"></a></li>
+          </ul>
         </div>
-    </section>
-    <script>
-        function sendEmail() {
 
-            // Get input fields
-            var firstName = document.getElementById("inpFirstName").value;
-            var lastName = document.getElementById("inpLastName").value;
-            var fullName = firstName + " " + lastName;
-            var email = document.getElementById("inpEmail").value;
-            var phone = document.getElementById("inpPhoneNum").value;
-            var message = document.getElementById("inpMessage").value;
+        <!-- Contact Form -->
+        <div class="contactForm">
+          <h2>Send a Message</h2>
+          <div class="formBox">
+            <div class="inputBox w50">
+              <input type="text" name="first_name" required>
+              <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="text" name="last_name" required>
+              <span>Last Name</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="email" name="email" required>
+              <span>Email Address</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="text" name="phone" required>
+              <span>Mobile Number</span>
+            </div>
+            <div class="inputBox w100">
+              <textarea name="message" required></textarea>
+              <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+              <input type="submit" value="Send">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 
-            // Send email
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "salmankentech@gmail.com",
-                Password: "(mbPahw9",
-                From: "salmankentech@gmail.com",
-                To: 'melleniumster@gmail.com',
-                Subject: "New Contact Form Enquiry",
-                Body: "Name: " + fullName + 
-                    "<br> Email: " + email +
-                    "<br> Phone No: " + phone +
-                    "<br> Message: " + message
-            }).then(
-                message => alert("Message Sent Successfully. Thanks for Contacting"),
-            );
-        }
-    </script>
+  <!-- Web3Forms Success/Error Handling -->
+  <script>
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData
+      });
+      if (response.ok) {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ Failed to send message. Please try again.");
+      }
+    });
+  </script>
 </body>
 
 </html>
